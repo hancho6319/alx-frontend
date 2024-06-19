@@ -1,48 +1,59 @@
+/* Define custom font family properties */
 :root {
+  --font-family-base: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
+  
+  /* Define custom properties for font sizes */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
   --font-size-xx-large: 4.8rem;
-}
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: var(--font-size-medium);
-}
-
-/* Define custom properties for font sizes with comments explaining their purpose */
-:root {
-  --font-size-small: 1.2rem; /* Small font size */
-  --font-size-medium: 1.6rem; /* Medium font size (default for body) */
-  --font-size-large: 1.8rem; /* Large font size */
-  --font-size-x-large: 2.3rem; /* Extra large font size */
-  --font-size-xx-large: 4.8rem; /* Extra extra large font size */
-}
-
-/* Set font size for all elements to 62.5% of their normal size */
-html {
-  font-size: 62.5%;
-}
-
-/* Set body font size to use the --font-size-medium custom property */
-body {
-  font-size: var(--font-size-medium);
-}
-
-:root {
+  /* Define custom properties for font weights */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+  
+  /* Define custom properties for colors */
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
 }
 
+/* Set base font size for html to 62.5% */
+html {
+  font-size: 62.5%;
+}
+
+/* Set body font family, font size, and font weight */
 body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
 }
 
+/* Set font family and font weight for section headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
+}
+
+/* Set foreground color for body and anchor elements */
+body, a {
+  color: var(--text-color);
+}
+
+/* Hide elements with class visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Set foreground color using custom property */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
 }
 
