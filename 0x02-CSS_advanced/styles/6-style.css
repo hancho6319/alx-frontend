@@ -1,3 +1,22 @@
+/* Define custom properties for font sizes with comments explaining their purpose */
+:root {
+  --font-size-small: 1.2rem; /* Small font size */
+  --font-size-medium: 1.6rem; /* Medium font size (default for body) */
+  --font-size-large: 1.8rem; /* Large font size */
+  --font-size-x-large: 2.3rem; /* Extra large font size */
+  --font-size-xx-large: 4.8rem; /* Extra extra large font size */
+}
+
+/* Set font size for all elements to 62.5% of their normal size */
+html {
+  font-size: 62.5%;
+}
+
+/* Set body font size to use the --font-size-medium custom property */
+body {
+  font-size: var(--font-size-medium);
+}
+
 :root {
   --font-weight-regular: 400;
   --font-weight-bold: 700;
