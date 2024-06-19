@@ -1,18 +1,3 @@
-:root {
-  --font-size-small: 1.2rem;
-  --font-size-medium: 1.6rem;
-  --font-size-large: 1.8rem;
-  --font-size-x-large: 2.3rem;
-  --font-size-xx-large: 4.8rem;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: var(--font-size-medium);
-}
 /* Define custom font family properties */
 :root {
   --font-family-base: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -53,4 +38,20 @@ body, a {
 .card-category,
 .section-tagline {
   color: var(--color-primary);
+}
+
+:root {
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--font-size-medium);
 }
