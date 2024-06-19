@@ -1,0 +1,41 @@
+/* Define custom font family properties */
+:root {
+  --font-family-base: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* Set body font family */
+body {
+  font-family: var(--font-family-base);
+}
+
+/* Set font family for section headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+/* Define custom properties for colors */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
+
+/* Set foreground color for body and anchor elements */
+body, a {
+  color: var(--text-color);
+}
+
+/* Hide elements with class visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Set foreground color using custom property */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}
