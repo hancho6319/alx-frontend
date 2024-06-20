@@ -1,0 +1,22 @@
+/* 10-styles.css */
+
+/* Section HERO section */
+.article-page .section-hero {
+  margin-top: -8.5rem;
+  padding-top: 5rem;
+}
+
+/* Media queries for Section HERO section */
+@media (max-width: 767px) {
+  .section-hero {
+    margin: -0.1rem 0;
+  }
+
+  .hero-homepage {
+    background-position: 85% 0;
+  }
+
+  .section-hero .section-body {
+    padding: 2rem;
+  }
+}

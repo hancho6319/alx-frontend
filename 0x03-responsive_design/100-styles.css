@@ -1,0 +1,29 @@
+/* 100-styles.css */
+
+.post {
+  margin: 0 2rem;
+}
+
+/* Media queries for Post section */
+@media (max-width: 767px) {
+  .post {
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .post-content {
+    padding-left: 0;
+  }
+}
+
+/* Comment section */
+/* Your existing comment section styles here */
+
+/* Media queries for Comment section */
+@media (max-width: 767px) {
+  .post-comments {
+    width: calc(100% - 4rem);
+    margin: 2rem;
+    padding: 0;
+  }
+}
