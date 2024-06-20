@@ -1,0 +1,61 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the main content is responsive */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.col {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+/* Media Queries for different breakpoints */
+/* Large devices */
+@media (max-width: 992px) {
+    .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Medium devices */
+@media (max-width: 767px) {
+    .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+    main {
+        padding: 0.5rem;
+    }
+}
+
