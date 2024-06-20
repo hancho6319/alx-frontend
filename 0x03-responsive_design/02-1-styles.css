@@ -1,0 +1,48 @@
+/* Helpers */
+/* Target all images inside the main section */
+main img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Latest news */
+/* Add media query for tablet (max-width: 767px) */
+@media (max-width: 767px) {
+    .section-latest-news .row {
+        flex-direction: column;
+    }
+}
+
+/* Grid */
+/* Add media query for tablet (max-width: 767px) */
+@media (max-width: 767px) {
+    /* Redefine the variables */
+    :root {
+        --section-padding: 5rem 1.5rem;
+        --section-body-padding: 2rem 0 0;
+    }
+    
+    ul.row,
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    [class^="col-"] {
+        margin: 0 0 3rem 0;
+    }
+    
+    .col-1-3,
+    .col-1-2 {
+        width: 100%;
+    }
+}
+
+/* Navbar */
+/* Add media query for tablet (max-width: 767px) */
+@media (max-width: 767px) {
+    .navbar-menu {
+        display: none;
+    }
+}
+
