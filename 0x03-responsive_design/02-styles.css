@@ -1,0 +1,6 @@
+/* Existing CSS for .container */
+.container {
+    /* Other existing styles */
+    max-width: 100%; /* Change from width to max-width */
+}
+

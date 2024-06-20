@@ -1,0 +1,14 @@
+/* Existing CSS for hero-homepage class */
+
+.hero-homepage {
+    /* Other existing styles */
+    background-position: 65% 8rem;
+    background-size: 90rem auto;
+}
+
+/* Existing CSS for section-inner class inside section-hero class */
+
+.section-hero .section-inner {
+    /* Other existing styles */
+    min-height: 35vh;
+}
